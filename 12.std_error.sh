@@ -22,5 +22,6 @@ head -n1 /etc/passwd /etc/hosts /fakelist 2> head.err         //Now the error wi
 head -n1 /etc/passwd /etc/hosts /fakelist > head.out 2>head.err //combining both errors
 
 #To redirect msg and error to the same file
-head -n1 /etc/passwd /etc/hosts /fakelist > head.both 2>&1   //2 will be redirected to &1 which is the former mentioned file
-
+head -n1 /etc/passwd /etc/hosts /fakelist > head.both 2>&1           //2 will be redirected to &1 which is the former mentioned file
+(or)
+head -n1 /etc/passwd /etc/hosts /fakelist &> head.both
