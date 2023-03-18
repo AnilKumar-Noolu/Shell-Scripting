@@ -25,3 +25,8 @@ head -n1 /etc/passwd /etc/hosts /fakelist > head.out 2>head.err //combining both
 head -n1 /etc/passwd /etc/hosts /fakelist > head.both 2>&1           //2 will be redirected to &1 which is the former mentioned file
 (or)
 head -n1 /etc/passwd /etc/hosts /fakelist &> head.both
+
+#For discarding both stdout and stderr
+
+head -n1 /etc/passwd /etc/hosts /fakelist &> /dev/null         //It will not display any output/error on cmd prompt
+echo "${?}"                                                 //To chjeck if the status got success or not. 0 for success and 1 for failures
