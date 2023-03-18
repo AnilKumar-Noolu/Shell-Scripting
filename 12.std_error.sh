@@ -30,3 +30,8 @@ head -n1 /etc/passwd /etc/hosts /fakelist &> head.both
 
 head -n1 /etc/passwd /etc/hosts /fakelist &> /dev/null         //It will not display any output/error on cmd prompt
 echo "${?}"                                                 //To chjeck if the status got success or not. 0 for success and 1 for failures
+
+
+#To Redirect Std input and std error to a file ===    &>
+#To Redirect Std input and std error to a pipe ===    |&
+
