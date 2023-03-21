@@ -22,10 +22,12 @@ done
 
 #For removing the backups:
 sudo rm /tmp/*.gz
-if [[ $? -eq 0 ]];
+if [ $? -eq 0 ];
 then
 	echo "Backup's have been removed successfully"
 else
 	echo "Backup's removal has been failed"
 fi
-done
+
+
+
