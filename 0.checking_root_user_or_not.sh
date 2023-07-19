@@ -10,7 +10,7 @@ echo "Your Username is ${username}"
 #Finding root user or not
 if [[ ${UID} -eq 0 ]]
 then
-	echo "you are root user"
+	echo "Congratulations, you are root user"
 else
-	echo "you are not root user"
+	echo "you are not root user, try again."
 fi
